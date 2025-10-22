@@ -1,0 +1,32 @@
+1.mkdir Military-Project
+  cd Military-Project
+  git init
+2.echo > modiin.txt
+3.echo "All System are OFFLINE" > modiin.txt
+4.git status
+5.git add .
+  git commit -m "added modiin file"
+6.branch unit-669
+  git branch unit-alpha
+7.git checkout unit-669
+8.echo "All System are ON" >> modiin.txt
+9.git add modiin.txt
+  git commit -m "added txt to modiin.txt"
+10.git checkout unit-alpha
+11.echo "Unit-alpha are ON" >> modiin.txt
+12.git add modiin.txt
+   git commit -m "added txt to modiin.txt"
+13.git checkout master
+14.git merge unit-669
+15.git merge unit-alpha
+16.git diff
+17.פתירת הקונפליקט
+18.type modiin.txt
+הפלט:
+"All System are OFFLINE"
+<<<<<<< HEAD
+"All System are ON"
+=======
+"Unit-alpha are ON"
+>>>>>>> unit-alpha
+19.השאר נעשה ידנית
